@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   const Insurance = await hre.ethers.getContractFactory("Insurance");
-  const insurance = await Insurance.deploy();
+  const insurance = await Insurance.deploy(`0x0D17D1De09C0841c9E023A2a21Aa7eA8851B0fb8`);
 
   await insurance.deployed();
 
